@@ -1,10 +1,13 @@
 # Airports Located in the United States
 
 <img src= "img/Airports in the United States.JPG">
+<br>
+<br>
 
 __Introduction:__
 
 The goal of this project was to creaate an interactive web map of Airports in the United States. The main attribute identified from the airports was whether there was an air traffic control tower present at the airport. The states are scaled differently by color determined by the amount of airports present in their boundaries. Lastly, their are pop-ups attached to each airport marker location with the name of the airport and its location by City, State. The map can be used to
+<br>
 
  __Primary Functions__
  <table style="width:100%">
@@ -72,14 +75,101 @@ The goal of this project was to creaate an interactive web map of Airports in th
   <td>create Leaflet control object for legend</td>
 </tr>
  </table>
+<br>
 
- __Libraries__
+__Libraries__
 
+Attribute tables of geoJson files <br>
+Attributes from Data File: airports.geojson
+<table style="width:100%">
+  <tr>
+    <th>Attribute</th>
+    <th>Data Type</th>
+    <th>Descripition</th>
+  </tr>
+  <tr>
+    <td>AIRPT_NAME</td>
+    <td>String</td>
+    <td>Name of airport</td>
+    </tr>
+    <tr>
+      <td>CITY</td>
+      <td>String</td>
+      <td>Name of city where airport is located</td>
+      </tr>
+      <tr>
+        <td>STATE</td>
+        <td>String</td>
+        <td>Name of state where airport is located</td>
+        </tr>
+    <tr>
+    <td>COUNTY</td>
+    <td>String</td>
+    <td>Name of county where airport is located</td>
+    </tr>
+    <tr>
+      <td>TOT_ENP</td>
+      <td>Numeric</td>
+      <td>Total amount of people allowed to board an airplane</td>
+      </tr>
+      <tr>
+        <td>ACT_DATE</td>
+        <td>Numeric</td>
+        <td>Start of airport activity</td>
+        </tr>
+        <tr>
+          <td>ELEV</td>
+          <td>Numeric</td>
+          <td>Elevation of the airport</td>
+          </tr>
+      <tr>
+      <td>CNTL_TWR</td>
+      <td>Binary</td>
+      <td>Does the airport have an air traffic control tower "Y" = yes, "N" = No</td>
+      </tr>
+      <tr>
+        <td>coordinates</td>
+        <td>Numeric</td>
+        <td>Coordinate location of airport</td>
+        </tr>
+</table>
 
-__Credit/Acknowledgment__
+<br>
+Attributes from Data File: us-states.geojson
+<table style="width:100%">
+  <tr>
+    <th>Attribute</th>
+    <th>Data Type</th>
+    <th>Descripition</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Numeric</td>
+    <td>Identification of each US state based on alphabetical order</td>
+    </tr>
+  <tr>
+    <td>name</td>
+    <td>String</td>
+    <td>Name of State</td>
+    </tr>
+    <tr>
+      <td>count</td>
+      <td>Numeric</td>
+      <td>Number of airports in the state boundary</td>
+      </tr>
+      <tr>
+        <td>coordinates</td>
+        <td>Numeric</td>
+        <td>Coordinates of the states polygon shape</td>
+        </tr>
+</table>
+
+<br>
+
+__Credit/Acknowlegment__
 
 The information and workflow provided for this project was created by Professor Zhao of University of Washington. Other information linked to this project that Professor Zhao aquired was two geoJson files. First, from the US Government and the other was from Mike Bostock of D3. This project was created with other peoples ideas and information and I used all of it to further my skills and knowledge with creating interactive web maps.
-
+<br>
 __Data Sources__
  <table style="width:100%">
    <tr>
